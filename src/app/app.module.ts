@@ -1,5 +1,7 @@
-import { NgModule } from '@angular/core';
+import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {  appInitializer } from './_helpers/app.initializer';
+
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +12,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    { provide: APP_INITIALIZER, useFactory: appInitializer},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
