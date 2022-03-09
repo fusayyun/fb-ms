@@ -1,43 +1,12 @@
 <!DOCTYPE html><html lang="en"><head>
-  <meta charset="utf-8">
-  <title>FbMs</title>
-  <base href="/fb-ms/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" href="styles.31d6cfe0d16ae931b73c.css"></head>
-<body>
-
-  <app-root></app-root>
-<!-- Messenger 洽談外掛程式 Code -->
-<div id="fb-root"></div>
-
-<!-- Your 洽談外掛程式 code -->
-<div id="fb-customer-chat" class="fb-customerchat">
-</div>
-
-<script>
-  var chatbox = document.getElementById('fb-customer-chat');
-  chatbox.setAttribute("page_id", "103257502320861");
-  chatbox.setAttribute("attribution", "biz_inbox");
-</script>
-
-<!-- Your SDK code -->
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v13.0'
-    });
-  };
-
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
-  <script src="runtime.486eb75255c25559c658.js" defer></script><script src="polyfills.7a52ccc1a755bb0ea56d.js" defer></script><script src="main.1142ad997818a9f50ee3.js" defer></script>
+    <meta charset="utf-8">
+    <title>FbMs</title>
+    <base href="/fb-ms/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.31d6cfe0d16ae931b73c.css"></head>
+  <body>
+    <app-root></app-root>
+  <script src="runtime.486eb75255c25559c658.js" defer></script><script src="polyfills.7a52ccc1a755bb0ea56d.js" defer></script><script src="main.4f3395e58ba56e29cced.js" defer></script>
 
 </body></html>
